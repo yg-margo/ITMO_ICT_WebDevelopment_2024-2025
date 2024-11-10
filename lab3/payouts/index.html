@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Задание 1 - Web Docs</title>
+        <title>Payouts - Web Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -46,23 +46,23 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Задание 1</a>
+    <a href="../../lab1/task_1/" class="dropdown-item">Задание 1</a>
 </li>
             
 <li>
-    <a href="../task_2/" class="dropdown-item">Задание 2</a>
+    <a href="../../lab1/task_2/" class="dropdown-item">Задание 2</a>
 </li>
             
 <li>
-    <a href="../task_3/" class="dropdown-item">Задание 3</a>
+    <a href="../../lab1/task_3/" class="dropdown-item">Задание 3</a>
 </li>
             
 <li>
-    <a href="../task_4/" class="dropdown-item">Задание 4</a>
+    <a href="../../lab1/task_4/" class="dropdown-item">Задание 4</a>
 </li>
             
 <li>
-    <a href="../task_5/" class="dropdown-item">Задание 5</a>
+    <a href="../../lab1/task_5/" class="dropdown-item">Задание 5</a>
 </li>
     </ul>
   </li>
@@ -98,7 +98,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../lab3/models/" class="dropdown-item">Models</a>
+    <a href="../models/" class="dropdown-item">Models</a>
 </li>
             
   <li class="dropdown-submenu">
@@ -106,35 +106,35 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../lab3/client/" class="dropdown-item">Client</a>
+    <a href="../client/" class="dropdown-item">Client</a>
 </li>
             
 <li>
-    <a href="../../lab3/employee_contracts/" class="dropdown-item">Employee_contracts</a>
+    <a href="../employee_contracts/" class="dropdown-item">Employee_contracts</a>
 </li>
             
 <li>
-    <a href="../../lab3/agents/" class="dropdown-item">Agents</a>
+    <a href="../agents/" class="dropdown-item">Agents</a>
 </li>
             
 <li>
-    <a href="../../lab3/specializations/" class="dropdown-item">Specializations</a>
+    <a href="../specializations/" class="dropdown-item">Specializations</a>
 </li>
             
 <li>
-    <a href="../../lab3/payouts/" class="dropdown-item">Payouts</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Payouts</a>
 </li>
             
 <li>
-    <a href="../../lab3/enterprises/" class="dropdown-item">Enterprises</a>
+    <a href="../enterprises/" class="dropdown-item">Enterprises</a>
 </li>
             
 <li>
-    <a href="../../lab3/contracts/" class="dropdown-item">Contracts</a>
+    <a href="../contracts/" class="dropdown-item">Contracts</a>
 </li>
             
 <li>
-    <a href="../../lab3/claims/" class="dropdown-item">Claims</a>
+    <a href="../claims/" class="dropdown-item">Claims</a>
 </li>
     </ul>
   </li>
@@ -151,12 +151,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../.." class="nav-link">
+                                <a rel="prev" href="../specializations/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../task_2/" class="nav-link">
+                                <a rel="next" href="../enterprises/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -178,70 +178,70 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Возможные выплаты по категориям:</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Сериализатор:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Контроллеры:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Эндпоинты:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h3 id="1">Задание 1:</h3>
-<p>Реализовать клиентскую и серверную часть приложения. Клиент отправляет серверу сообщение «Hello, server», и оно должно отобразиться на стороне сервера. В ответ сервер отправляет клиенту сообщение «Hello, client», которое должно отобразиться у клиента.</p>
-<p>Требования:</p>
-<ul>
-<li>
-<p>Обязательно использовать библиотеку socket.</p>
-</li>
-<li>
-<p>Реализовать с помощью протокола UDP.</p>
-</li>
-</ul>
-<h3 id="_1">Ход работы:</h3>
-<h4 id="serverpy">server.py</h4>
-<pre><code>import socket
+<h1 id="_1">Возможные выплаты по категориям:</h1>
+<h2 id="_2">Сериализатор:</h2>
+<pre><code class="language-python">class PayoutSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Payout
+        fields = '__all__'
 
 
-def start_udp_server():
-    serv_address = ('localhost', 8080)
-
-    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
-        sock.bind(serv_address)
-        print('Сервер запущен и подключен по адресу:', serv_address)
-
-        while True:
-            data, cl_address = sock.recvfrom(1024)
-            print('Получено сообщение от клиента:', data.decode())
-            response = 'Hello, client!'
-            sock.sendto(response.encode(), cl_address)
-            print('Отправлено сообщение клиенту:', response)
-
-
-if __name__ == &quot;__main__&quot;:
-    start_udp_server()
+class PayoutListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Payout
+        fields = ['risk_category', 'insured_event']
 </code></pre>
-<h4 id="clientpy">client.py</h4>
-<pre><code>import socket
+<h2 id="_3">Контроллеры:</h2>
+<pre><code class="language-python">class PayoutListCreateAPIView(generics.ListCreateAPIView):
+    &quot;&quot;&quot;
+    Список и добавление возможных выплат по категориям
+    &quot;&quot;&quot;
+    queryset = Payout.objects.all()
+
+    def get_serializer_class(self):
+        if self.request.method ==&quot;GET&quot;:
+            return PayoutListSerializer
+        elif self.request.method == &quot;POST&quot;:
+            return PayoutSerializer
 
 
-def communicate_with_server():
-    serv_address = ('localhost', 8080)
-    message = 'Hello, server!'
-
-    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
-        sock.sendto(message.encode(), serv_address)
-        print(f'Message sent to server: {message}')
-
-        data, _ = sock.recvfrom(1024)
-        print(f'Received message from server: {data.decode()}')
-
-
-if __name__ == &quot;__main__&quot;:
-    communicate_with_server()
-
+class PayoutUpdateDeleteAPIView(generics.RetrieveUpdateDestroyAPIView):
+    &quot;&quot;&quot;
+    Обновление информации, её просмотр и удаление конкретной выплаты
+    &quot;&quot;&quot;
+    queryset = Payout.objects.all()
+    serializer_class = PayoutSerializer
+    lookup_field = &quot;id&quot;
 </code></pre>
-<p>Для успешного обмена данными сначала необходимо запустить серверный файл, который всегда готов 
-слушать, а потом запустить клиентский файл, который сразу после установки соединения отправляет 
-сообщение.</p>
-<p>UDP соединение обеспечивается созданием UDP-socket с помощью параметра <code>socket.socket(socket.AF_INET, socket.SOCK_DGRAM)</code></p></div>
+<h2 id="_4">Эндпоинты:</h2>
+<ol>
+<li>GET "/payouts/" - получение списка всех возможных выплат</li>
+<li>POST "/payouts/"- добавление новой выплаты</li>
+<li>GET "/payouts/id/" - получение информации о конкретной выплате</li>
+<li>PUT/PATCH "/payouts/id/" - изменение информации о выплате</li>
+<li>DELETE "/payouts/id/" - удаление выплаты</li>
+</ol></div>
             </div>
         </div>
 
