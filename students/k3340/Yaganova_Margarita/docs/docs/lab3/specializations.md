@@ -1,6 +1,6 @@
-# Специализации:
+# Специализации
 
-## Сериализатор:
+## Сериализатор
 ```python
 class SpecializationSerializer(serializers.ModelSerializer):
     class Meta:
@@ -8,7 +8,7 @@ class SpecializationSerializer(serializers.ModelSerializer):
         fields = "__all__"
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class SpecializationListCreateAPIView(generics.ListCreateAPIView):
     """
@@ -18,6 +18,6 @@ class SpecializationListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = SpecializationSerializer
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/specializations/" - получение списка всех специализаций
 2. POST "/specializations/"- добавление новой специализации

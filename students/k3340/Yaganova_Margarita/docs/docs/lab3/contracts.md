@@ -1,6 +1,6 @@
-# Страховые договоры:
+# Страховые договоры
 
-## Сериализатор:
+## Сериализатор
 ```python
 class InsuranceContractSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,7 +14,7 @@ class InsuranceContractListSerializer(serializers.ModelSerializer):
         fields = ['agent', 'enterprise']
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class InsuranceContractListCreateAPIView(generics.ListCreateAPIView):
     """
@@ -84,7 +84,7 @@ class ClientContractsListView(generics.ListAPIView):
         return InsuranceContract.objects.filter(clients__id=client_id)
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/contracts/" - получение списка всех страховых договоров
 2. POST "/contracts/"- добавление нового договора
 3. GET "/contracts/id/" - получение информации о конкретном договоре

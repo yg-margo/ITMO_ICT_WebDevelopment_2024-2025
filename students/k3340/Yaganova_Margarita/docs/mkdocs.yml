@@ -1,4 +1,4 @@
-site_name: Web Docs
+site_name: MkDocs by Margo
 
 nav:
   - Home: index.md

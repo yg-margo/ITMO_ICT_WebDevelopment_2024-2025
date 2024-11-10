@@ -1,6 +1,6 @@
-# Страховые выплаты:
+# Страховые выплаты
 
-## Сериализатор:
+## Сериализатор
 ```python
 class InsuranceClaimSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,7 +14,7 @@ class InsuranceClaimListSerializer(serializers.ModelSerializer):
         fields = ['insurance_contract', 'decision']
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class InsuranceClaimListCreateAPIView(generics.ListCreateAPIView):
     """
@@ -50,7 +50,7 @@ class EnterpriseInsuranceClaimsListView(generics.ListAPIView):
 
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/insurance_claims/ - получение списка всех страховых выплат
 2. POST "/insurance_claims/"- добавление новой выплаты
 3. GET "/insurance_claims/id/" - получение информации о конкретной выплате

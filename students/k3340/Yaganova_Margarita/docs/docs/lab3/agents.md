@@ -1,6 +1,6 @@
-# Страховые агенты:
+# Страховые агенты
 
-## Сериализатор:
+## Сериализатор
 ```python
 class AgentSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,7 +14,7 @@ class AgentListSerializer(serializers.ModelSerializer):
         fields = ["username"]
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class AgentListAPIView(generics.ListAPIView):
     """
@@ -45,7 +45,7 @@ class ActiveAgentsListView(generics.ListAPIView):
                                     contract__end_date__gte=timezone.now())
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/agents/" - получение списка всех страховых агентов
 2. POST "/auth/users/"- регистрация нового страхового агента
 3. POST "/auth/token/login/" - авторизация страхового агента

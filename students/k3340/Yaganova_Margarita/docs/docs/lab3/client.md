@@ -1,6 +1,6 @@
-# Клиенты:
+# Клиенты
 
-## Сериализатор:
+## Сериализатор
 ```python
 class ClientListSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,7 +14,7 @@ class ClientSerializer(serializers.ModelSerializer):
         fields = "__all__"
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class ClientListCreateView(generics.ListCreateAPIView):
     """
@@ -40,7 +40,7 @@ class ClientRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     lookup_field = "id"
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/clients/" - получение списка всех клиентов
 2. POST "/clients/"- добавление нового клиента
 3. GET "/clients/id/" - получение информации о конкретном клиенте

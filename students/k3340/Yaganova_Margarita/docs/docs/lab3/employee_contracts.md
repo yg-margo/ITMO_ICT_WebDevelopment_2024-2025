@@ -1,6 +1,6 @@
-# Трудовые договоры с агентами:
+# Трудовые договоры с агентами
 
-## Сериализатор:
+## Сериализатор
 ```python
 class EmploymentContractSerializer(serializers.ModelSerializer):
     class Meta:
@@ -8,7 +8,7 @@ class EmploymentContractSerializer(serializers.ModelSerializer):
         fields = "__all__"
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class EmployeeContractListCreateAPIView(generics.ListCreateAPIView):
     """
@@ -27,7 +27,7 @@ class EmployeeContractUpdateDeleteAPIView(generics.RetrieveUpdateDestroyAPIView)
     lookup_field = "id"
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/employee_contracts/" - получение списка всех трудовых договоров
 2. POST "/clients/"- добавление нового трудового договора
 3. GET "/clients/id/" - получение информации о конкретном трудовом договоре

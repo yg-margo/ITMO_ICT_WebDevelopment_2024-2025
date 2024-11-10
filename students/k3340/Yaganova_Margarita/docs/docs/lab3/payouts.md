@@ -1,6 +1,6 @@
-# Возможные выплаты по категориям:
+# Возможные выплаты по категориям
 
-## Сериализатор:
+## Сериализатор
 ```python
 class PayoutSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,7 +14,7 @@ class PayoutListSerializer(serializers.ModelSerializer):
         fields = ['risk_category', 'insured_event']
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class PayoutListCreateAPIView(generics.ListCreateAPIView):
     """
@@ -38,7 +38,7 @@ class PayoutUpdateDeleteAPIView(generics.RetrieveUpdateDestroyAPIView):
     lookup_field = "id"
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/payouts/" - получение списка всех возможных выплат
 2. POST "/payouts/"- добавление новой выплаты
 3. GET "/payouts/id/" - получение информации о конкретной выплате

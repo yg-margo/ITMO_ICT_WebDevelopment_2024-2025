@@ -1,6 +1,6 @@
-# Компании:
+# Компании
 
-## Сериализатор:
+## Сериализатор
 ```python
 class EnterpriseSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,7 +14,7 @@ class EnterpriseListSerializer(serializers.ModelSerializer):
         fields = ["short_name"]
 ```
 
-## Контроллеры:
+## Контроллеры
 ```python
 class EnterpriseListCreateAPIView(generics.ListCreateAPIView):
     """
@@ -38,7 +38,7 @@ class EnterpriseRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIVi
     serializer_class = EnterpriseSerializer
 ```
 
-## Эндпоинты:
+## Эндпоинты
 1. GET "/enterprises/" - получение списка всех компаний
 2. POST "/enterprises/"- добавление новой компании
 3. GET "/enterprises/id/" - получение информации о конкретной компании
