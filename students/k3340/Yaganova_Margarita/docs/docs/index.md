@@ -2,44 +2,43 @@
 
 ## Лабораторная работа №1
 
-- [Задание 1](http://127.0.0.1:8000/lab1/task_1/)
+- [Задание 1](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab1/task_1/)
       
-- [Задание 2](http://127.0.0.1:8000/lab1/task_2/)
+- [Задание 2](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab1/task_2/)
       
-- [Задание 3](http://127.0.0.1:8000/lab1/task_3/)
+- [Задание 3](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab1/task_3/)
       
-- [Задание 4](http://127.0.0.1:8000/lab1/task_4/)
+- [Задание 4](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab1/task_4/)
 
-- [Задание 5](http://127.0.0.1:8000/lab1/task_5/)
+- [Задание 5](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab1/task_5/)
 
 
 ## Лабораторная работа №2
 
-- [Условия](http://127.0.0.1:8000/lab2/index.md/)
+- [Условия](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab2/index/)
       
-- [Формы](http://127.0.0.1:8000/lab2/forms.md/)
+- [Формы](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab2/forms/)
       
-- [Реализованные модели](http://127.0.0.1:8000/lab2/models.md/)
+- [Реализованные модели](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab2/models/)
 
-- [Контроллеры](http://127.0.0.1:8000/lab2/view.md)
+- [Контроллеры](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab2/view/)
      
-- [Итоговый вид приложения](http://127.0.0.1:8000/lab2/result.md)
+- [Итоговый вид приложения](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab2/result/)
 
 ## Лабораторная работа №3
 
-- [Клиенты](http://127.0.0.1:8000/lab3/client.md)
+- [Клиенты](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/client/)
 
-- [Контракты_сотрудников](http://127.0.0.1:8000/lab3/employee_contracts.md)
+- [Контракты_сотрудников](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/employee_contracts/)
 
-- [Агенты](http://127.0.0.1:8000/lab3/agents.md)
+- [Агенты](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/agents/)
 
-- [Специализации](http://127.0.0.1:8000/lab3/specializations.md)
+- [Специализации](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/specializations/)
 
-- [Выплаты](http://127.0.0.1:8000/lab3/payouts.md)
+- [Выплаты](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/payouts/)
 
-- [Предприятия](http://127.0.0.1:8000/lab3/enterprises.md)
+- [Предприятия](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/enterprises/)
 
-- [Контракты](http://127.0.0.1:8000/lab3/contracts.md)
+- [Контракты](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/contracts/)
 
-- [Претензии](http://127.0.0.1:8000/lab3/claims.md)
-
+- [Претензии](https://yg-margo.github.io/ITMO_ICT_WebDevelopment_2024-2025/lab3/claims/)
