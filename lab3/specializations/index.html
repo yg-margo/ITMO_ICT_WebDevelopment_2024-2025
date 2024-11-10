@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Specializations - Web Docs</title>
+        <title>Specializations - MkDocs by Margo</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">Web Docs</a>
+                <a class="navbar-brand" href="../..">MkDocs by Margo</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -178,17 +178,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Специализации:</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Специализации</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Сериализатор:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Контроллеры:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Сериализатор</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Эндпоинты:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Контроллеры</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Эндпоинты</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -199,14 +199,14 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Специализации:</h1>
-<h2 id="_2">Сериализатор:</h2>
+<h1 id="_1">Специализации</h1>
+<h2 id="_2">Сериализатор</h2>
 <pre><code class="language-python">class SpecializationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Specialization
         fields = &quot;__all__&quot;
 </code></pre>
-<h2 id="_3">Контроллеры:</h2>
+<h2 id="_3">Контроллеры</h2>
 <pre><code class="language-python">class SpecializationListCreateAPIView(generics.ListCreateAPIView):
     &quot;&quot;&quot;
     Добавление и список всех возможных специализаций компаний
@@ -214,7 +214,7 @@
     queryset = Specialization.objects.all()
     serializer_class = SpecializationSerializer
 </code></pre>
-<h2 id="_4">Эндпоинты:</h2>
+<h2 id="_4">Эндпоинты</h2>
 <ol>
 <li>GET "/specializations/" - получение списка всех специализаций</li>
 <li>POST "/specializations/"- добавление новой специализации</li>

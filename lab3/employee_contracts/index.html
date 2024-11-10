@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Employee_contracts - Web Docs</title>
+        <title>Employee_contracts - MkDocs by Margo</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">Web Docs</a>
+                <a class="navbar-brand" href="../..">MkDocs by Margo</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -178,17 +178,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Трудовые договоры с агентами:</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Трудовые договоры с агентами</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Сериализатор:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Контроллеры:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Сериализатор</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Эндпоинты:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Контроллеры</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Эндпоинты</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -199,14 +199,14 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Трудовые договоры с агентами:</h1>
-<h2 id="_2">Сериализатор:</h2>
+<h1 id="_1">Трудовые договоры с агентами</h1>
+<h2 id="_2">Сериализатор</h2>
 <pre><code class="language-python">class EmploymentContractSerializer(serializers.ModelSerializer):
     class Meta:
         model = EmploymentContract
         fields = &quot;__all__&quot;
 </code></pre>
-<h2 id="_3">Контроллеры:</h2>
+<h2 id="_3">Контроллеры</h2>
 <pre><code class="language-python">class EmployeeContractListCreateAPIView(generics.ListCreateAPIView):
     &quot;&quot;&quot;
     Получение информации о списке контрактов с агентами, а также их добавление
@@ -223,7 +223,7 @@ class EmployeeContractUpdateDeleteAPIView(generics.RetrieveUpdateDestroyAPIView)
     serializer_class = EmploymentContractSerializer
     lookup_field = &quot;id&quot;
 </code></pre>
-<h2 id="_4">Эндпоинты:</h2>
+<h2 id="_4">Эндпоинты</h2>
 <ol>
 <li>GET "/employee_contracts/" - получение списка всех трудовых договоров</li>
 <li>POST "/clients/"- добавление нового трудового договора</li>
